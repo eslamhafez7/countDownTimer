@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;1,400;1,600;1,800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --main-color: #2196F3;
+    --main-transition: 0.3s;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.time {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    gap: 10px;
+    justify-content: center;
+}
+.time .unit {
+    border: 1px solid #D4D4D4;
+    border-radius: 6px;
+    text-align: center;
+    width: 90px;
+    transition: var(--main-transition);
+}
+.time .unit:hover, 
+.time .unit:hover span:last-child { 
+border-color: var(--main-color);
+}
+.time .unit span {
+    display: block;
+    transition: var(--main-transition);
+}
+.time span:first-child {
+    font-size: 35px;
+    padding: 15px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.time span:last-child {
+    padding: 8px 10px;
+    font-size: 12px;
+    border-top: 1px solid #D4D4D4;
+}
